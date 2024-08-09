@@ -1,7 +1,7 @@
 Linux kernel
 ============
 how to compile
-``git clone https://github.com/TigerClips1/JaguarLinux-ps4-x86_64-dist-kernel``
+git clone https://github.com/TigerClips1/JaguarLinux-ps4-x86_64-dist-kernel
 ``cd JaguarLinux-ps4-x86_64-dist-kernel``
 ``mv config .config``
 ``make -j4``
