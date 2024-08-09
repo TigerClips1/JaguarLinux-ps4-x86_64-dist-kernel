@@ -47,20 +47,15 @@ static NORETURN inline void die(const char *err, ...)
 		} \
 	} while(0)
 
+
 static inline void *xrealloc(void *ptr, size_t size)
 {
 	void *ret = realloc(ptr, size);
-	if (!ret && !size)
-		ret = realloc(ptr, 1);
-	if (!ret) {
-		ret = realloc(ptr, size);
-		if (!ret && !size)
-			ret = realloc(ptr, 1);
-		if (!ret)
-			die("Out of memory, realloc failed");
-	}
+	if (!ret)
+		die("Out of memory, realloc failed");
 	return ret;
 }
+
 
 #define astrcatf(out, fmt, ...)						\
 ({									\
