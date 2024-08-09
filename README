@@ -6,6 +6,7 @@ git clone https://github.com/TigerClips1/JaguarLinux-ps4-x86_64-dist-kernel
 ``mv config .config``
 ``make -j4``
 NOTE ``this kernel works for any ps4linux distro``
+NOTE ``This kernel only works for bleaze and aeolia bakial is so broken on 5.15 but any kernel would work for this distro``
 
 There are several guides for kernel developers and users. These guides can
 be rendered in a number of formats, like HTML and PDF. Please read
